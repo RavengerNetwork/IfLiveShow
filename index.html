@@ -9,10 +9,10 @@
 $.getJSON('https://api.twitch.tv/kraken/streams/Jonathan_x64', function(channel) {
 
     if (channel["stream"] == null) { 
-        //offline
+        $('#Twitch').hide(); 
 
     } else {
-        //Live
+        $('#Twitch').show(); 
     
     }
 });
