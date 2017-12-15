@@ -1,9 +1,23 @@
 <html>
 <head>
 <title>LiveTV</title>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 </head>
 <body>
 <h1>This is the test page for LiveTV</p>
+    <script>
+$.getJSON('https://api.twitch.tv/kraken/streams/Jonathan_x64', function(channel) {
+
+    if (channel["stream"] == null) { 
+        //offline
+
+    } else {
+        //Live
+    
+    }
+});
+</script>
+   <div id="Twitch">
     <!-- Add a placeholder for the Twitch embed -->
     <div id="twitch-embed"></div>
 
@@ -18,5 +32,6 @@
         channel: "Ravenger"
       });
     </script>
+    </div>
 </body>
 </html>
