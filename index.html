@@ -9,15 +9,15 @@
 $.getJSON('https://api.twitch.tv/kraken/streams/Ravenger', function(channel) {
 
     if (channel["stream"] == null) { 
-        $('#Twitch').hide(); 
+        $('#t').hide(); 
 
     } else {
-       $('#Twitch').show(); 
+       $('#t').show(); 
     
     }
 });
 </script>
-   <div id="Twitch">
+   <div id="t">
     <!-- Add a placeholder for the Twitch embed -->
     <div id="twitch-embed"></div>
 
