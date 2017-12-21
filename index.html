@@ -2,6 +2,16 @@
 <head>
 <title>LiveTV</title>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    $.ajax({
+ type: 'GET',
+ url: 'https://api.twitch.tv/kraken/channels/twitch',
+ headers: {
+   'Client-ID': 'rmc3c3vr4dn2uqr5rbvcuut5cs2z10'
+ },
+ success: function(data) {
+   console.log(data);
+ }
+});
 </head>
 <body>
 <h1>This is the test page for LiveTV</p>
