@@ -2,19 +2,6 @@
 <head>
 <title>LiveTV</title>
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="https://cdn.rawgit.com/Fugiman/Twitch-Channel-Status/1d74252edf89110507cbf3088f9c3eaa38fac9d3/twitch-channel-status.min.js"></script>
-    <script>
-    $.ajax({
- type: 'GET',
- url: 'https://api.twitch.tv/kraken/channels/twitch',
- headers: {
-   'Client-ID': 'rmc3c3vr4dn2uqr5rbvcuut5cs2z10'
- },
- success: function(data) {
-   console.log(data);
- }
-});
-    </script>
 </head>
 <body>
 <h1>This is the test page for LiveTV</p>
@@ -27,6 +14,7 @@
 
     <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
     <script type="text/javascript">
+      
       new Twitch.Embed("twitch-embed", {
         width: 700,
         height: 500,
